@@ -1,0 +1,19 @@
+<%-include("partials/header") -%>
+
+
+  <h1>home age</h1>
+  <p><%= StartingContent %></p>
+  <!-- <console.log(posts)%> -->
+
+  <%  posts.forEach(function(post){  %>
+    <!-- <  console.log(post.ptitle);  %> -->
+    <h1><%= post.ptitle %></h1> 
+    <p><%= post.pbody.substring(0, 99) + "..." %></p> 
+    <% }); %>
+
+
+
+
+
+
+<%-include("partials/footer") -%>
